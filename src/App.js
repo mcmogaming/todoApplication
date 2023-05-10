@@ -23,7 +23,7 @@ function App() {
       { method: 'POST', body: JSON.stringify({}) },
     )
       .then((data) => data.json())
-      .then((data) => {
+      .then((data) => { 
         console.log(data);
         setTodoItems(
           data.my_data.map((item) => {
