@@ -19,7 +19,7 @@ function App() {
 
   const refreshHandler = function () {
     fetch(
-      'https://yhl5u44f253mrzletlbecufqb40oeqlj.lambda-url.us-east-2.on.aws/',
+      'https://3jiqvblf6esnso4wi72j5j4f5i0wpisv.lambda-url.us-east-1.on.aws/',
       { method: 'POST', body: JSON.stringify({}) },
     )
       .then((data) => data.json())
