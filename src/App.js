@@ -19,7 +19,7 @@ function App() {
 
   const refreshHandler = function () {
     fetch(
-      'https://3jiqvblf6esnso4wi72j5j4f5i0wpisv.lambda-url.us-east-1.on.aws/',
+      'https://r6cizssruztqlb3p7jqmorlk7y0vmqzv.lambda-url.us-east-1.on.aws/',
       { method: 'POST', body: JSON.stringify({}) },
     )
       .then((data) => data.json())
@@ -41,7 +41,7 @@ function App() {
 
   const addItemHandler = function () {
     fetch(
-      'https://yhl5u44f253mrzletlbecufqb40oeqlj.lambda-url.us-east-2.on.aws/',
+      'https://r6cizssruztqlb3p7jqmorlk7y0vmqzv.lambda-url.us-east-1.on.aws/',
       {
         method: 'PUT',
         body: JSON.stringify({ id: todoId, message: todoMessage }),
@@ -56,7 +56,7 @@ function App() {
 
   const removeItemHandler = function () {
     fetch(
-      'https://yhl5u44f253mrzletlbecufqb40oeqlj.lambda-url.us-east-2.on.aws/',
+      'https://r6cizssruztqlb3p7jqmorlk7y0vmqzv.lambda-url.us-east-1.on.aws/',
       { method: 'DELETE', body: JSON.stringify({ id: todoId }) },
     )
       .then((data) => data.json())
@@ -68,7 +68,7 @@ function App() {
 
   const removeSpecificItemHandler = function (itemId) {
     fetch(
-      'https://yhl5u44f253mrzletlbecufqb40oeqlj.lambda-url.us-east-2.on.aws/',
+      'https://r6cizssruztqlb3p7jqmorlk7y0vmqzv.lambda-url.us-east-1.on.aws/',
       { method: 'DELETE', body: JSON.stringify({ id: itemId }) },
     )
       .then((data) => data.json())
