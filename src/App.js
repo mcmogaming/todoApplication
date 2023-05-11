@@ -69,7 +69,7 @@ function App() {
   const removeSpecificItemHandler = function (itemId) {
     fetch(
       'https://r6cizssruztqlb3p7jqmorlk7y0vmqzv.lambda-url.us-east-1.on.aws/',
-      { method: 'DELETE', body: JSON.stringify({ id: itemId }) },
+      { method: 'PATCH', body: JSON.stringify({ id: itemId }) },
     )
       .then((data) => data.json())
       .then((data) => {
