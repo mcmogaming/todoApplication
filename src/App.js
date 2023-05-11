@@ -57,7 +57,7 @@ function App() {
   const removeItemHandler = function () {
     fetch(
       'https://r6cizssruztqlb3p7jqmorlk7y0vmqzv.lambda-url.us-east-1.on.aws/',
-      { method: 'DELETE', body: JSON.stringify({ id: todoId }) },
+      { method: 'PATCH', body: JSON.stringify({ id: todoId }) },
     )
       .then((data) => data.json())
       .then((data) => {
