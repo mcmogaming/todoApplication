@@ -36,7 +36,7 @@ function App() {
             );
           }),
         );
-      });
+      }).catch((e)=>{console.log(e)});
   };
 
   const addItemHandler = function () {
@@ -51,7 +51,7 @@ function App() {
       .then((data) => {
         console.log(data);
         refreshHandler();
-      });
+      }).catch((e)=>{console.log(e)});
   };
 
   const removeItemHandler = function () {
@@ -63,7 +63,7 @@ function App() {
       .then((data) => {
         console.log(data);
         refreshHandler();
-      });
+      }).catch((e)=>{console.log(e)});
   };
 
   const removeSpecificItemHandler = function (itemId) {
@@ -75,7 +75,7 @@ function App() {
       .then((data) => {
         console.log(data);
         refreshHandler();
-      });
+      }).catch((e)=>{console.log(e)});
   };
 
   return (
